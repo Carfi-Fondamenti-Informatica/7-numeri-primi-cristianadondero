@@ -1,12 +1,14 @@
 #include "lib.h"
-bool numeriprimi (int n, int d){
+bool numeriprimi(int n, int d){
     if(d==0 || d==1){
         return true;
-    }else{
+    }
+    else{
         int c=n%d;
         if(c!=0){
             numeriprimi(n, d-1);
-        }else{
+        }
+        else{
             return false;
         }
     }
